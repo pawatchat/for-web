@@ -1,7 +1,7 @@
 import { Show } from "solid-js";
 
 import { Trans } from "@lingui/solid/macro";
-import { ServerMember, User } from "stoat.js";
+import { ServerMember, User } from "pawat.js";
 
 import { timeLocale, useTime } from "@revolt/i18n";
 
@@ -19,7 +19,7 @@ export function ProfileJoined(props: { user: User; member?: ServerMember }) {
         <Trans>Joined</Trans>
       </Text>
       <Text class="label">
-        <OverflowingText>Stoat</OverflowingText>
+        <OverflowingText>Pawat</OverflowingText>
         {/* <Trans>Account Created</Trans> */}
       </Text>
       <Text>

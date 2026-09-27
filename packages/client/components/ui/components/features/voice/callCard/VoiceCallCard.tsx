@@ -13,7 +13,7 @@ import {
 import { Portal } from "solid-js/web";
 
 import { createResizeObserver } from "@solid-primitives/resize-observer";
-import { Channel } from "stoat.js";
+import { Channel } from "pawat.js";
 import { styled } from "styled-system/jsx";
 
 import { useVoice } from "@revolt/rtc";

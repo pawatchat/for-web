@@ -1,4 +1,4 @@
-import type { WebsiteEmbed } from "stoat.js";
+import type { WebsiteEmbed } from "pawat.js";
 
 import { SizedContent } from "@revolt/ui/components/utils";
 

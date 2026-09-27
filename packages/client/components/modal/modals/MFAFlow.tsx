@@ -10,7 +10,7 @@ import {
 } from "solid-js";
 
 import { Trans, useLingui } from "@lingui/solid/macro";
-import type { API } from "stoat.js";
+import type { API } from "pawat.js";
 
 import {
   CategoryButton,

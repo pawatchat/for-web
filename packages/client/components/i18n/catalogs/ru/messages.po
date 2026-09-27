@@ -5,7 +5,7 @@ msgstr ""
 "POT-Creation-Date: 2025-09-29 18:29-0500\n"
 "PO-Revision-Date: 2026-09-09 04:25+0000\n"
 "Last-Translator: Keysadin <keysadingo@gmail.com>\n"
-"Language-Team: Russian <https://translate.stoat.chat/projects/revolt/revolt-for-web/ru/>\n"
+"Language-Team: Russian <https://translate.pawat.chat/projects/revolt/revolt-for-web/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -819,7 +819,7 @@ msgstr ""
 #~ msgstr "Проверьте свою электронную почту!"
 
 #: components/auth/src/flows/FlowConfirmReset.tsx
-msgid "Choose a new password for your Stoat account."
+msgid "Choose a new password for your Pawat account."
 msgstr ""
 
 #: components/auth/src/flows/FlowLogin.tsx
@@ -1043,8 +1043,8 @@ msgid "Could not find what you requested."
 msgstr "Не удалось найти то, что вы искали."
 
 #: components/instance/index.tsx
-msgid "Couldn't fetch Stoat configuration from {hStr}."
-msgstr "Не удалось получить конфигурацию Stoat из {hStr}."
+msgid "Couldn't fetch Pawat configuration from {hStr}."
+msgstr "Не удалось получить конфигурацию Pawat из {hStr}."
 
 #: components/ui/components/design/ImageCropper.tsx
 msgid "Couldn't load this image."
@@ -1393,8 +1393,8 @@ msgid "Discover"
 msgstr ""
 
 #: src/interface/Home.tsx
-msgid "Discover Stoat"
-msgstr "Исследовать Stoat"
+msgid "Discover Pawat"
+msgstr "Исследовать Pawat"
 
 #: components/app/interface/settings/user/appearance/AppearanceMenu.tsx
 msgid "Display & Text"
@@ -1437,12 +1437,12 @@ msgid "Donate"
 msgstr "Пожертвовать"
 
 #: src/interface/Home.tsx
-msgid "Donate to Stoat"
-msgstr "Пожертвовать Stoat"
+msgid "Donate to Pawat"
+msgstr "Пожертвовать Pawat"
 
 #: components/ui/components/features/profiles/ProfileBadges.tsx
-msgid "Donated to Stoat"
-msgstr "Пожертвовал Stoat"
+msgid "Donated to Pawat"
+msgstr "Пожертвовал Pawat"
 
 #: components/modal/modals/MFARecovery.tsx
 msgid "Done"
@@ -1641,8 +1641,8 @@ msgid "Extreme violence, gore or animal cruelty"
 msgstr "Чрезмерное насилие, кровавые сцены или жестокое обращение с животными"
 
 #: components/client/NotificationsController.ts
-msgid "Failed to enable notifications. Stoat does not have notification permission."
-msgstr "Не удалось включить уведомления. У Stoat нет разрешения на их отправку."
+msgid "Failed to enable notifications. Pawat does not have notification permission."
+msgstr "Не удалось включить уведомления. У Pawat нет разрешения на их отправку."
 
 #: components/client/NotificationsController.ts
 msgid "Failed to enable push notifications. Please try again later."
@@ -1761,7 +1761,7 @@ msgid "Get it on Google Play"
 msgstr "Доступно в Google Play"
 
 #: components/auth/src/AppUpsell.tsx
-msgid "Get Stoat for Android and keep up with your friends wherever you are."
+msgid "Get Pawat for Android and keep up with your friends wherever you are."
 msgstr ""
 
 #: components/auth/src/AppUpsell.tsx
@@ -1769,16 +1769,16 @@ msgid "Get the desktop app for Windows, macOS and Linux and keep your conversati
 msgstr ""
 
 #: components/ui/components/features/messaging/composition/picker/GifPicker.tsx
-msgid "Gifbox is our own GIF service, so you can keep sharing GIFs right here on Stoat."
-msgstr "Gifbox — наш собственный сервис GIF, так что вы можете продолжать делиться гифками прямо здесь, в Stoat."
+msgid "Gifbox is our own GIF service, so you can keep sharing GIFs right here on Pawat."
+msgstr "Gifbox — наш собственный сервис GIF, так что вы можете продолжать делиться гифками прямо здесь, в Pawat."
 
 #: components/ui/components/features/messaging/composition/picker/GifPicker.tsx
 msgid "GIFs are now powered by Gifbox"
 msgstr "Теперь GIF работают на базе Gifbox"
 
 #: src/interface/Home.tsx
-msgid "Give feedback on Stoat"
-msgstr "Оставить отзыв о Stoat"
+msgid "Give feedback on Pawat"
+msgstr "Оставить отзыв о Pawat"
 
 #: components/modal/modals/ReportContent.tsx
 msgid "Give us some detail"
@@ -1802,8 +1802,8 @@ msgstr "Откройте настройки акаунта, чтобы изме�
 
 #: components/app/interface/settings/user/Feedback.tsx
 #: src/interface/Home.tsx
-msgid "Go to the Stoat Lounge"
-msgstr "Войти в Stoat Lounge"
+msgid "Go to the Pawat Lounge"
+msgstr "Войти в Pawat Lounge"
 
 #~ msgid "Go to the testers server"
 #~ msgstr "Перейти на сервер тестировщиков"
@@ -1859,8 +1859,8 @@ msgid "Help contribute to an existing or new language"
 msgstr "Помогите перевести на существующий или новый язык"
 
 #: components/ui/components/features/profiles/ProfileBadges.tsx
-msgid "Helped translate Stoat"
-msgstr "Помогите перевести Stoat"
+msgid "Helped translate Pawat"
+msgstr "Помогите перевести Pawat"
 
 #. placeholder {0}: link()
 #: components/modal/modals/CreateInvite.tsx
@@ -1916,16 +1916,16 @@ msgid "Impersonation"
 msgstr "Выдача себя за кого-то другого"
 
 #: src/AndroidNag.tsx
-msgid "In the meantime, install Stoat from Google Play for a faster, smoother experience designed for Android."
-msgstr "Тем временем можно установить Stoat из Google Play для более быстрой и удобной работы на Android."
+msgid "In the meantime, install Pawat from Google Play for a faster, smoother experience designed for Android."
+msgstr "Тем временем можно установить Pawat из Google Play для более быстрой и удобной работы на Android."
 
 #: components/app/interface/settings/user/voice/VoiceInputOptions.tsx
 msgid "Input Volume"
 msgstr "Громкость микрофона"
 
 #: components/app/interface/settings/user/Native.tsx
-msgid "Instead of closing, Stoat will hide in your tray."
-msgstr "Stoat будет скрыт в панеле задач вместо закрытия."
+msgid "Instead of closing, Pawat will hide in your tray."
+msgstr "Pawat будет скрыт в панеле задач вместо закрытия."
 
 #: components/app/interface/settings/user/appearance/AppearanceMenu.tsx
 msgid "Interface Font"
@@ -1986,13 +1986,13 @@ msgid "Join a server"
 msgstr "Присоедениться к серверу"
 
 #: components/auth/src/flows/FlowCreate.tsx
-msgid "Join Stoat"
+msgid "Join Pawat"
 msgstr ""
 
 #: components/app/interface/settings/user/Feedback.tsx
 #: src/interface/Home.tsx
-msgid "Join the Stoat Lounge"
-msgstr "Присоедениться к Stoat Lounge"
+msgid "Join the Pawat Lounge"
+msgstr "Присоедениться к Pawat Lounge"
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardPreview.tsx
 #: src/interface/channels/ChannelHeader.tsx
@@ -2050,16 +2050,16 @@ msgid "Latest"
 msgstr "Последние"
 
 #: components/app/interface/settings/user/Native.tsx
-msgid "Launch Stoat when you log into your computer."
-msgstr "Запускать Stoat при запуске компьютера."
+msgid "Launch Pawat when you log into your computer."
+msgstr "Запускать Pawat при запуске компьютера."
 
 #: components/ui/components/features/messaging/composition/picker/GifPicker.tsx
 msgid "Learn more"
 msgstr "Подробнее"
 
 #: components/app/interface/settings/user/bots/MyBots.tsx
-msgid "Learn more about how to create bots on Stoat."
-msgstr "Узнать больше о создании ботов в Stoat."
+msgid "Learn more about how to create bots on Pawat."
+msgstr "Узнать больше о создании ботов в Pawat."
 
 #: components/modal/modals/DeleteChannel.tsx
 #: components/modal/modals/LeaveServer.tsx
@@ -2082,8 +2082,8 @@ msgid "Leave server"
 msgstr "Покинуть сервер"
 
 #: components/app/interface/settings/user/Native.tsx
-msgid "Let Stoat use its own custom titlebar."
-msgstr "Позволить Stoat использовать свой заголовок."
+msgid "Let Pawat use its own custom titlebar."
+msgstr "Позволить Pawat использовать свой заголовок."
 
 #: src/interface/Home.tsx
 msgid "Let us know how we can improve our app by giving us feedback."
@@ -2417,11 +2417,11 @@ msgid "New Password"
 msgstr "Новый пароль"
 
 #: components/app/interface/channels/text/Message.tsx
-msgid "New to Stoat"
-msgstr "Новый в Stoat"
+msgid "New to Pawat"
+msgstr "Новый в Pawat"
 
 #: components/auth/src/AuthPage.tsx
-msgid "New to Stoat?"
+msgid "New to Pawat?"
 msgstr ""
 
 #: components/app/interface/channels/text/Message.tsx
@@ -2873,8 +2873,8 @@ msgid "Rename Session"
 msgstr "Переименовать Сессию"
 
 #: components/app/interface/settings/user/Native.tsx
-msgid "Rep Stoat using Discord rich presence."
-msgstr "Представлять Stoat в Discord RPC."
+msgid "Rep Pawat using Discord rich presence."
+msgstr "Представлять Pawat в Discord RPC."
 
 #: components/app/menus/MessageContextMenu.tsx
 msgid "Reply"
@@ -3233,8 +3233,8 @@ msgid "Show send message button"
 msgstr "Показывать кнопку отправки сообщения"
 
 #: components/auth/src/flows/FlowLogin.tsx
-#~ msgid "Sign into Stoat"
-#~ msgstr "Войти в Stoat"
+#~ msgid "Sign into Pawat"
+#~ msgstr "Войти в Pawat"
 
 #: components/auth/src/flows/FlowHome.tsx
 #~ msgid "Sign Up"
@@ -3329,35 +3329,35 @@ msgid "Status"
 msgstr "Статус"
 
 #: components/ui/components/features/profiles/ProfileBadges.tsx
-msgid "Stoat Developer"
-msgstr "Разработчик Stoat"
+msgid "Pawat Developer"
+msgstr "Разработчик Pawat"
 
 #: components/app/interface/settings/user/Native.tsx
-msgid "Stoat for Desktop"
-msgstr "Stoat для ПК"
+msgid "Pawat for Desktop"
+msgstr "Pawat для ПК"
 
 #: components/ui/components/features/profiles/ProfileBadges.tsx
-msgid "Stoat Founder"
-msgstr "Основатель Stoat"
+msgid "Pawat Founder"
+msgstr "Основатель Pawat"
 
 #: components/auth/src/flows/FlowHome.tsx
-#~ msgid "Stoat is one of the best ways to stay connected with your friends and community, anywhere, anytime."
-#~ msgstr "Stoat — это один из лучших способов оставаться на связи с друзями и сообществом, везде, всегда."
+#~ msgid "Pawat is one of the best ways to stay connected with your friends and community, anywhere, anytime."
+#~ msgstr "Pawat — это один из лучших способов оставаться на связи с друзями и сообществом, везде, всегда."
 
 #: components/app/interface/settings/server/roles/ServerRoleEditor.tsx
-msgid "Stoat rocks!"
-msgstr "Stoat — это круто!"
+msgid "Pawat rocks!"
+msgstr "Pawat — это круто!"
 
 #: components/app/interface/settings/user/Native.tsx
-msgid "Stoat will start in the system tray."
-msgstr "Stoat будет запускаться свернутым в системный трей."
+msgid "Pawat will start in the system tray."
+msgstr "Pawat будет запускаться свернутым в системный трей."
 
 #: src/AndroidNag.tsx
-msgid "Stoat works best as an app"
-msgstr "Stoat лучше работает в приложении"
+msgid "Pawat works best as an app"
+msgstr "Pawat лучше работает в приложении"
 
 #: components/auth/src/AppUpsell.tsx
-msgid "Stoat, right on <0>your desktop.</0>"
+msgid "Pawat, right on <0>your desktop.</0>"
 msgstr ""
 
 #: components/ui/components/features/voice/callCard/VoiceCallCardActions.tsx
@@ -3393,8 +3393,8 @@ msgid "Subscriptions"
 msgstr "Подписки"
 
 #: components/app/interface/settings/user/Feedback.tsx
-msgid "Suggest new Stoat features on GitHub discussions."
-msgstr "Предложить новую функцию Stoat в обсуждениях GitHub."
+msgid "Suggest new Pawat features on GitHub discussions."
+msgstr "Предложить новую функцию Pawat в обсуждениях GitHub."
 
 #: src/interface/Home.tsx
 msgid "Support the project by donating - thank you!"
@@ -3661,8 +3661,8 @@ msgstr "Разблокировать пользователя"
 
 #. placeholder {0}: err.type
 #: components/i18n/errors.tsx
-msgid "Uncaught Stoat error: {0}"
-msgstr "Неожиданная ошибка Stoat: {0}"
+msgid "Uncaught Pawat error: {0}"
+msgstr "Неожиданная ошибка Pawat: {0}"
 
 #: components/app/interface/settings/user/notifications/Sounds.tsx
 #: components/ui/components/features/voice/callCard/VoiceCallCardActions.tsx
@@ -3900,7 +3900,7 @@ msgid "We are working hard on optimising our web app for mobile."
 msgstr "Мы активно работаем над оптимизацией веб-приложения для мобильных устройств."
 
 #: components/auth/src/flows/FlowLogin.tsx
-msgid "We couldn't finish logging you in. Try again, and if it keeps happening, check Stoat's status."
+msgid "We couldn't finish logging you in. Try again, and if it keeps happening, check Pawat's status."
 msgstr ""
 
 #: components/auth/src/flows/FlowCreate.tsx
@@ -4136,8 +4136,8 @@ msgid "You've been logged out"
 msgstr ""
 
 #: components/modal/modals/SignedOut.tsx
-msgid "You've been signed out of Stoat!"
-msgstr "Вы вышли из Stoat!"
+msgid "You've been signed out of Pawat!"
+msgstr "Вы вышли из Pawat!"
 
 #: components/i18n/errors.tsx
 msgid "You've reached your personal bot limit."

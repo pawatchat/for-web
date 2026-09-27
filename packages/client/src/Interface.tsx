@@ -7,7 +7,7 @@ import {
   Switch,
 } from "solid-js";
 
-import { Server } from "stoat.js";
+import { Server } from "pawat.js";
 import { styled } from "styled-system/jsx";
 
 import { ChannelContextMenu, ServerContextMenu } from "@revolt/app";

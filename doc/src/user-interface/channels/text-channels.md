@@ -51,7 +51,7 @@ This algorithm expects that the rendering of the output list is reversed, if you
 - **Type 1**: Message divider (either date divider or unread divider)
 - **Type 2**: Blocked messages counter showing the number of consecutive blocked messages
 
-_Note: the Stoat client also caches the objects produced for list **E** by pushing each object into a Map by their given cache key above, then retrieving them the next time the code is run OR creating a new object if one is not present. This prevents Solid.js from completely rebuilding the DOM whenever the message list updates._
+_Note: the Pawat client also caches the objects produced for list **E** by pushing each object into a Map by their given cache key above, then retrieving them the next time the code is run OR creating a new object if one is not present. This prevents Solid.js from completely rebuilding the DOM whenever the message list updates._
 
 ## Message View
 

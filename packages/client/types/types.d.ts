@@ -2,7 +2,7 @@ import type { SolidOptions } from "solid-dnd-directive";
 import { Setter } from "solid-js";
 
 import type { Placement } from "@floating-ui/dom";
-import type { Channel, Client, ServerMember, ServerRole, User } from "stoat.js";
+import type { Channel, Client, ServerMember, ServerRole, User } from "pawat.js";
 
 declare global {
   interface Window {

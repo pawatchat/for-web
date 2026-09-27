@@ -47,7 +47,7 @@ function EmailPrivacyHint() {
           </Trans>
         </p>
         <a
-          href="https://stoat.chat/privacy"
+          href="https://pawat.chat/privacy"
           target="_blank"
           rel="noopener noreferrer"
           tabIndex={-1} // redundant for kb nav -> another link in footer
@@ -68,7 +68,7 @@ export default function FlowCreate() {
   const { code } = useParams();
   const modals = useModals();
   const { login } = useClientLifecycle();
-  const { config, isStoat } = useInstance();
+  const { config, isPawat } = useInstance();
 
   /**
    * Create an account
@@ -107,13 +107,13 @@ export default function FlowCreate() {
       <FlowTitle
         subtitle={<Trans>Set up your account and make yourself at home.</Trans>}
       >
-        <Trans>Join Stoat</Trans>
+        <Trans>Join Pawat</Trans>
       </FlowTitle>
       <Form onSubmit={create} captcha={config.features.captcha.key}>
         <Fields
           fields={[
-            // Stoat's privacy policy doesn't cover third party instances
-            isStoat ? { field: "email", hint: <EmailPrivacyHint /> } : "email",
+            // Pawat's privacy policy doesn't cover third party instances
+            isPawat ? { field: "email", hint: <EmailPrivacyHint /> } : "email",
             "new-password",
           ]}
         />
@@ -142,7 +142,7 @@ export default function FlowCreate() {
             cursor: "pointer",
           }}
           onClick={() => {
-            setFlowCheckEmail("insert@stoat.chat");
+            setFlowCheckEmail("insert@pawat.chat");
             navigate("/login/check", { replace: true });
           }}
         >

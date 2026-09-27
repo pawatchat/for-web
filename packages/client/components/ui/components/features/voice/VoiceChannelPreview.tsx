@@ -8,7 +8,7 @@ import {
 } from "solid-livekit-components";
 
 import { Track } from "livekit-client";
-import { Channel, VoiceParticipant } from "stoat.js";
+import { Channel, VoiceParticipant } from "pawat.js";
 import { cva } from "styled-system/css";
 import { styled } from "styled-system/jsx";
 

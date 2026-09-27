@@ -1,7 +1,7 @@
 import { Match, Show, Switch } from "solid-js";
 
 import { Trans } from "@lingui/solid/macro";
-import type { Message } from "stoat.js";
+import type { Message } from "pawat.js";
 import { styled } from "styled-system/jsx";
 
 import { Row } from "@revolt/ui/components/layout";

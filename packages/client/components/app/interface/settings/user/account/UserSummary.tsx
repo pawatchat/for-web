@@ -1,6 +1,6 @@
 import { Show } from "solid-js";
 
-import { User } from "stoat.js";
+import { User } from "pawat.js";
 import { styled } from "styled-system/jsx";
 
 import { useTime } from "@revolt/i18n";

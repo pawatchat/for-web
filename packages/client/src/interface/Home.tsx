@@ -1,7 +1,7 @@
 import { Match, Show, Switch } from "solid-js";
 
 import { Trans } from "@lingui/solid/macro";
-import { PublicChannelInvite } from "stoat.js";
+import { PublicChannelInvite } from "pawat.js";
 import { css, cva } from "styled-system/css";
 import { styled } from "styled-system/jsx";
 
@@ -98,8 +98,8 @@ export function HomePage() {
   const client = useClient();
   const instance = useInstance();
 
-  // check if we're stoat.chat; if so, check if the user is in the Lounge
-  const showLoungeButton = instance.isStoat;
+  // check if we're pawat.chat; if so, check if the user is in the Lounge
+  const showLoungeButton = instance.isPawat;
   const isInLounge =
     client()!.servers.get("01F7ZSBSFHQ8TA81725KQCSDDP") !== undefined;
 
@@ -151,7 +151,7 @@ export function HomePage() {
                   }
                   icon={<MdGroups3 />}
                 >
-                  <Trans>Go to the Stoat Lounge</Trans>
+                  <Trans>Go to the Pawat Lounge</Trans>
                 </CategoryButton>
               </Match>
               <Match when={showLoungeButton && !isInLounge}>
@@ -172,23 +172,23 @@ export function HomePage() {
                   }
                   icon={<MdGroups3 />}
                 >
-                  <Trans>Join the Stoat Lounge</Trans>
+                  <Trans>Join the Pawat Lounge</Trans>
                 </CategoryButton>
               </Match>
             </Switch>
             <CategoryButton
               variant="tertiary"
-              onClick={() => window.open("https://ko-fi.com/stoatchat")}
+              onClick={() => window.open("https://ko-fi.com/pawatchat")}
               description={
                 <Trans>Support the project by donating - thank you!</Trans>
               }
               icon={<MdPayments />}
             >
-              <Trans>Donate to Stoat</Trans>
+              <Trans>Donate to Pawat</Trans>
             </CategoryButton>
           </SeparatedColumn>
           <SeparatedColumn>
-            <Show when={instance.isStoat}>
+            <Show when={instance.isPawat}>
               <CategoryButton
                 onClick={() => navigate("/discover")}
                 description={
@@ -198,7 +198,7 @@ export function HomePage() {
                 }
                 icon={<MdExplore />}
               >
-                <Trans>Discover Stoat</Trans>
+                <Trans>Discover Pawat</Trans>
               </CategoryButton>
             </Show>
             <CategoryButton
@@ -216,7 +216,7 @@ export function HomePage() {
               }
               icon={<MdRateReview {...iconSize(22)} />}
             >
-              <Trans>Give feedback on Stoat</Trans>
+              <Trans>Give feedback on Pawat</Trans>
             </CategoryButton>
             <CategoryButton
               onClick={() => openModal({ type: "settings", config: "user" })}

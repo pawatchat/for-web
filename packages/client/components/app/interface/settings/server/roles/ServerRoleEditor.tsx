@@ -2,7 +2,7 @@ import { For, createMemo } from "solid-js";
 
 import { Trans, useLingui } from "@lingui/solid/macro";
 import { createFormControl, createFormGroup } from "solid-forms";
-import { API, Server, ServerRole } from "stoat.js";
+import { API, Server, ServerRole } from "pawat.js";
 import { styled } from "styled-system/jsx";
 
 import { useClient } from "@revolt/client";
@@ -93,7 +93,7 @@ function RoleColourPicker(props: {
                     </ColouredText>
                   </PreviewUsername>
                   <PreviewBody>
-                    <Trans>Stoat rocks!</Trans>
+                    <Trans>Pawat rocks!</Trans>
                   </PreviewBody>
                 </PreviewMessageContent>
               </PreviewMessage>

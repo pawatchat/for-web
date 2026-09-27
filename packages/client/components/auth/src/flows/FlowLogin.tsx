@@ -119,7 +119,7 @@ export default function FlowLogin() {
             subtitle={
               <Trans>
                 We couldn't finish logging you in. Try again, and if it keeps
-                happening, check Stoat's status.
+                happening, check Pawat's status.
               </Trans>
             }
           >

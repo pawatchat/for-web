@@ -1,22 +1,22 @@
 <div align="center">
 <h1>
-  Stoat Frontend
+  Pawat Frontend
   
-  [![Stars](https://img.shields.io/github/stars/stoatchat/for-web?style=flat-square&logoColor=white)](https://github.com/stoatchat/for-web/stargazers)
-  [![Forks](https://img.shields.io/github/forks/stoatchat/for-web?style=flat-square&logoColor=white)](https://github.com/stoatchat/for-web/network/members)
-  [![Pull Requests](https://img.shields.io/github/issues-pr/stoatchat/for-web?style=flat-square&logoColor=white)](https://github.com/stoatchat/for-web/pulls)
-  [![Issues](https://img.shields.io/github/issues/stoatchat/for-web?style=flat-square&logoColor=white)](https://github.com/stoatchat/for-web/issues)
-  [![Contributors](https://img.shields.io/github/contributors/stoatchat/for-web?style=flat-square&logoColor=white)](https://github.com/stoatchat/for-web/graphs/contributors)
-  [![License](https://img.shields.io/github/license/stoatchat/for-web?style=flat-square&logoColor=white)](https://github.com/stoatchat/for-web/blob/main/LICENSE)
+  [![Stars](https://img.shields.io/github/stars/pawatchat/for-web?style=flat-square&logoColor=white)](https://github.com/pawatchat/for-web/stargazers)
+  [![Forks](https://img.shields.io/github/forks/pawatchat/for-web?style=flat-square&logoColor=white)](https://github.com/pawatchat/for-web/network/members)
+  [![Pull Requests](https://img.shields.io/github/issues-pr/pawatchat/for-web?style=flat-square&logoColor=white)](https://github.com/pawatchat/for-web/pulls)
+  [![Issues](https://img.shields.io/github/issues/pawatchat/for-web?style=flat-square&logoColor=white)](https://github.com/pawatchat/for-web/issues)
+  [![Contributors](https://img.shields.io/github/contributors/pawatchat/for-web?style=flat-square&logoColor=white)](https://github.com/pawatchat/for-web/graphs/contributors)
+  [![License](https://img.shields.io/github/license/pawatchat/for-web?style=flat-square&logoColor=white)](https://github.com/pawatchat/for-web/blob/main/LICENSE)
 </h1>
-The official web client powering https://stoat.chat/app, built with <a href="https://www.solidjs.com/">Solid.js</a> 💖. <br/>
-Track the project roadmap on <a href="https://op.stoatinternal.com/projects/revolt-for-web/roadmap">OpenProject</a>.
+The official web client powering https://pawat.chat/app, built with <a href="https://www.solidjs.com/">Solid.js</a> 💖. <br/>
+Track the project roadmap on <a href="https://op.pawatinternal.com/projects/revolt-for-web/roadmap">OpenProject</a>.
 </div>
 <br/>
 
 ## Development Guide
 
-Before contributing, make yourself familiar with [our contribution guidelines](https://developers.stoat.chat/developing/contrib/), the [code style guidelines](./GUIDELINES.md), and the [technical documentation for this project](https://stoatchat.github.io/for-web/).
+Before contributing, make yourself familiar with [our contribution guidelines](https://developers.pawat.chat/developing/contrib/), the [code style guidelines](./GUIDELINES.md), and the [technical documentation for this project](https://pawatchat.github.io/for-web/).
 
 Before getting started, you'll want to install:
 
@@ -27,7 +27,7 @@ Then proceed to setup:
 
 ```bash
 # clone the repository
-git clone --recursive https://github.com/stoatchat/for-web client
+git clone --recursive https://github.com/pawatchat/for-web client
 cd client
 
 # update submodules if you pull new changes
@@ -39,8 +39,8 @@ mise install:frozen
 # build deps:
 mise build:deps
 
-# or build a specific dep (e.g. stoat.js updates):
-# pnpm --filter stoat.js run build
+# or build a specific dep (e.g. pawat.js updates):
+# pnpm --filter pawat.js run build
 
 # customise the .env
 cp packages/client/.env.example packages/client/.env
@@ -61,11 +61,11 @@ By default, the client connects to a backend running on the same host (localhost
 If you want the client to connect to the official hosted backend instead, open the .env file at /packages/client/.env and comment out the local URL varaibles like this:
 
 ```env
-# connect to local Stoat instance
+# connect to local Pawat instance
 #VITE_API_URL=http://localhost:14702
 ```
 
-When these variables are not set, the client automatically falls back to the official backend. (See https://github.com/stoatchat/for-web/blob/main/packages/client/components/common/lib/env.ts)
+When these variables are not set, the client automatically falls back to the official backend. (See https://github.com/pawatchat/for-web/blob/main/packages/client/components/common/lib/env.ts)
 
 ## Deployment Guide
 
@@ -81,7 +81,7 @@ mise build:deps
 # build for web
 mise build
 
-# ... when building for Stoat production
+# ... when building for Pawat production
 mise build:prod
 ```
 

@@ -23,7 +23,7 @@ recurseSource(source);
 
 // 2. read STRINGs we need from source gettext
 const source_gettext = await Deno.readTextFile(
-  "/home/insert/Projects/stoat-frontend/packages/client/components/i18n/catalogs/en/messages.po",
+  "/home/insert/Projects/pawat-frontend/packages/client/components/i18n/catalogs/en/messages.po",
 );
 
 const RE_GETTEXT = /msgid "([^"]+)"/g;
@@ -45,7 +45,7 @@ for (const { i18n } of Object.values(Languages)) {
   );
 
   let source_gettext = await Deno.readTextFile(
-    `/home/insert/Projects/stoat-frontend/packages/client/components/i18n/catalogs/${i18n}/messages.po`,
+    `/home/insert/Projects/pawat-frontend/packages/client/components/i18n/catalogs/${i18n}/messages.po`,
   );
 
   for (const string of STRINGs) {
@@ -65,7 +65,7 @@ msgstr "${value}"`,
   }
 
   await Deno.writeTextFile(
-    `/home/insert/Projects/stoat-frontend/packages/client/components/i18n/catalogs/${i18n}/messages.po`,
+    `/home/insert/Projects/pawat-frontend/packages/client/components/i18n/catalogs/${i18n}/messages.po`,
     source_gettext,
   );
 }

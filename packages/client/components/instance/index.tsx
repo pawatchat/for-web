@@ -11,12 +11,12 @@ import {
 import { Dynamic } from "solid-js/web";
 
 import { CONFIGURATION } from "@revolt/common";
-import { AppConfig, normalizeHost, STOAT_HOST } from "@revolt/common/lib/env";
+import { AppConfig, normalizeHost, PAWAT_HOST } from "@revolt/common/lib/env";
 import { LoadingScreen, useSnackbar } from "@revolt/ui";
 
 import Instance, { _newClient } from "./Instance";
 
-export const StoatOrigin = new URL(`https://${STOAT_HOST}`).origin;
+export const PawatOrigin = new URL(`https://${PAWAT_HOST}`).origin;
 export const DefaultURL = new URL(`https://${CONFIGURATION.DEFAULT_HOST}`);
 export const DefaultHost = DefaultURL.host;
 const DefRoute = `/i/${DefaultHost}/`;
@@ -32,14 +32,14 @@ export function InstanceContext(props: { children?: JSXElement }) {
 
   const [inst, setInst] = createSignal<Instance>();
 
-  //Check Stoat instance
+  //Check Pawat instance
   const host = normalizeHost(params.host);
 
   function onError(e: unknown) {
     console.error(e);
     if ((e as Error).message === "Failed to fetch") {
       const hStr = `'${host || DefaultHost}'`;
-      e = t`Couldn't fetch Stoat configuration from ${hStr}.`;
+      e = t`Couldn't fetch Pawat configuration from ${hStr}.`;
     }
     snackbar.show({
       message: t`Oops, something went wrong! ${e}`,
@@ -58,7 +58,7 @@ export function InstanceContext(props: { children?: JSXElement }) {
 
     try {
       const appCfg: AppConfig = host
-        ? await (await fetch(`https://${host}/.well-known/stoat`)).json()
+        ? await (await fetch(`https://${host}/.well-known/pawat`)).json()
         : { api: CONFIGURATION.DEFAULT_API_URL };
 
       const cli = _newClient(appCfg.api);
@@ -81,7 +81,7 @@ export function InstanceContext(props: { children?: JSXElement }) {
     <Show
       when={instInit()}
       fallback={
-        <LoadingScreen isStoat={(host || DefaultHost) === STOAT_HOST} />
+        <LoadingScreen isPawat={(host || DefaultHost) === PAWAT_HOST} />
       }
     >
       <Dynamic component={instanceContext.Provider} value={instInit()}>

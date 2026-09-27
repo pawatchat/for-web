@@ -6,7 +6,7 @@ import { useState } from "@revolt/state";
 import { Slider, Symbol, Text } from "@revolt/ui";
 import { useNavigate } from "@solidjs/router";
 import { type JSX, Match, Show, Switch } from "solid-js";
-import type { Channel, Message, ServerMember, User } from "stoat.js";
+import type { Channel, Message, ServerMember, User } from "pawat.js";
 import { styled } from "styled-system/jsx";
 
 import {
@@ -205,11 +205,11 @@ export function UserContextMenu(props: {
   }
 
   /**
-   * Open user in Stoat Admin Panel
+   * Open user in Pawat Admin Panel
    */
   function openAdminPanel() {
     window.open(
-      `https://admin.stoatinternal.com/panel/inspect/user/${props.user.id}`,
+      `https://admin.pawatinternal.com/panel/inspect/user/${props.user.id}`,
       "_blank",
     );
   }

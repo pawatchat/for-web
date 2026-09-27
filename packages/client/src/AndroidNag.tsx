@@ -23,8 +23,8 @@ const isEligibleOrigin = () => {
   const { hostname } = window.location;
   return (
     hostname === "localhost" ||
-    hostname.endsWith(".stoat.chat") ||
-    hostname === "stoat.chat"
+    hostname.endsWith(".pawat.chat") ||
+    hostname === "pawat.chat"
   );
 };
 
@@ -49,11 +49,11 @@ export function AndroidNag() {
     <Show when={show()}>
       <Base>
         <Hero>
-          <img src={AndroidPromo} alt="Stoat on Android" />
+          <img src={AndroidPromo} alt="Pawat on Android" />
 
           <Heading>
             <Text class="headline" size="large">
-              <Trans>Stoat works best as an app</Trans>
+              <Trans>Pawat works best as an app</Trans>
             </Text>
           </Heading>
 
@@ -66,7 +66,7 @@ export function AndroidNag() {
 
             <Text class="body" size="large">
               <Trans>
-                In the meantime, install Stoat from Google Play for a faster,
+                In the meantime, install Pawat from Google Play for a faster,
                 smoother experience designed for Android.
               </Trans>
             </Text>

@@ -1,6 +1,6 @@
 import { useLingui } from "@lingui/solid/macro";
 
-import { Client } from "stoat.js";
+import { Client } from "pawat.js";
 
 import { useModals } from "@revolt/modal";
 import { useState } from "@revolt/state";
@@ -21,7 +21,7 @@ export function useNotifications() {
     settings.resetNotificationsState("denied");
     if (showModal) {
       showError(
-        t`Failed to enable notifications. Stoat does not have notification permission.`,
+        t`Failed to enable notifications. Pawat does not have notification permission.`,
       );
     }
     await killServiceWorkerSubscription(getClient());

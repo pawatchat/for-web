@@ -7,7 +7,7 @@ import {
   ServerMember,
   ServerRole,
   User,
-} from "stoat.js";
+} from "pawat.js";
 
 export interface AutoCompleteSearchSpace {
   users?: User[];

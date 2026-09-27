@@ -2,7 +2,7 @@ import isEqual from "lodash.isequal";
 import { batch } from "solid-js";
 
 import { ReactiveSet } from "@solid-primitives/set";
-import { Client } from "stoat.js";
+import { Client } from "pawat.js";
 
 import { State } from "..";
 

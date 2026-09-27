@@ -1,7 +1,7 @@
 import { Component, JSX, Match, Show, Switch, createMemo } from "solid-js";
 import { styled } from "styled-system/jsx";
 
-import { Channel, Server as ServerI } from "stoat.js";
+import { Channel, Server as ServerI } from "pawat.js";
 
 import {
   CategoryContextMenu,

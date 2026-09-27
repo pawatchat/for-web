@@ -1,4 +1,4 @@
-import type { Server } from "stoat.js";
+import type { Server } from "pawat.js";
 
 // servers above this size are too large to fetch all members for
 const LARGE_SERVER_MEMBER_THRESHOLD = 1000;

@@ -20,8 +20,8 @@ COPY patches/ patches/
 # Install dependencies
 RUN pnpm install --frozen-lockfile
 
-# Build sub-dependencies (stoat.js, livekit-components, lingui plugins, panda css etc)
-RUN pnpm --filter stoat.js build && \
+# Build sub-dependencies (pawat.js, livekit-components, lingui plugins, panda css etc)
+RUN pnpm --filter pawat.js build && \
   pnpm --filter solid-livekit-components build && \
   pnpm --filter client exec lingui compile --typescript && \
   pnpm --filter client exec node scripts/copyAssets.mjs && \

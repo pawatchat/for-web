@@ -202,7 +202,7 @@ function PickTimeFormat() {
  */
 function ContributeLanguageLink() {
   return (
-    <a href="https://translate.stoat.chat/projects/revolt/" target="_blank">
+    <a href="https://translate.pawat.chat/projects/revolt/" target="_blank">
       <CategoryButton
         action="external"
         icon={<MdTranslate {...iconSize(22)} />}

@@ -1,4 +1,4 @@
-import { Client, Server } from "stoat.js";
+import { Client, Server } from "pawat.js";
 
 import { State } from "..";
 

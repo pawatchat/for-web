@@ -30,7 +30,7 @@ import { VoiceChannelCallCardMount } from "@revolt/ui/components/features/voice/
 import { ChannelHeader } from "../ChannelHeader";
 import { ChannelPageProps } from "../ChannelPage";
 
-import { Channel } from "stoat.js";
+import { Channel } from "pawat.js";
 import { MessageComposition } from "./Composition";
 import { isLargeServer } from "./largeServer";
 import { MemberSidebar } from "./MemberSidebar";

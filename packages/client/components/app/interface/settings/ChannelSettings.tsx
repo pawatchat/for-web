@@ -1,5 +1,5 @@
 import { Trans, useLingui } from "@lingui/solid/macro";
-import { Channel } from "stoat.js";
+import { Channel } from "pawat.js";
 
 import { useClient } from "@revolt/client";
 import { TextWithEmoji } from "@revolt/markdown";

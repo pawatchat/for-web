@@ -1,6 +1,6 @@
 # User Limits
 
-Many interactions a user can have with Stoat are limited by the backend. Any action that has a backend limit should have a matching limit in for-web.
+Many interactions a user can have with Pawat are limited by the backend. Any action that has a backend limit should have a matching limit in for-web.
 
 ## Using Limits
 

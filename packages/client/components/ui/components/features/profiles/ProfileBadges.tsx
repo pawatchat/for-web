@@ -2,7 +2,7 @@ import { BiSolidShield } from "solid-icons/bi";
 import { Show } from "solid-js";
 
 import { Trans, useLingui } from "@lingui/solid/macro";
-import { User, UserBadges } from "stoat.js";
+import { User, UserBadges } from "pawat.js";
 import { styled } from "styled-system/jsx";
 
 import badgeJoke1 from "../../../../../public/assets/badges/amog.svg";
@@ -35,7 +35,7 @@ export function ProfileBadges(props: { user: User }) {
               use:floating={{
                 tooltip: {
                   placement: "top",
-                  content: t`Stoat Founder`,
+                  content: t`Pawat Founder`,
                 },
               }}
               src={badgeFounder}
@@ -46,7 +46,7 @@ export function ProfileBadges(props: { user: User }) {
               use:floating={{
                 tooltip: {
                   placement: "top",
-                  content: t`Stoat Developer`,
+                  content: t`Pawat Developer`,
                 },
               }}
               src={badgeDeveloper}
@@ -57,7 +57,7 @@ export function ProfileBadges(props: { user: User }) {
               use:floating={{
                 tooltip: {
                   placement: "top",
-                  content: t`Donated to Stoat`,
+                  content: t`Donated to Pawat`,
                 },
               }}
               src={badgeSupporter}
@@ -68,7 +68,7 @@ export function ProfileBadges(props: { user: User }) {
               use:floating={{
                 tooltip: {
                   placement: "top",
-                  content: t`Helped translate Stoat`,
+                  content: t`Helped translate Pawat`,
                 },
               }}
               src={badgeTranslator}

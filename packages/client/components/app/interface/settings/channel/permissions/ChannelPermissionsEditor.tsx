@@ -6,7 +6,7 @@ import {
   Channel,
   DEFAULT_PERMISSION_DIRECT_MESSAGE,
   Server,
-} from "stoat.js";
+} from "pawat.js";
 import { css } from "styled-system/css";
 import { styled } from "styled-system/jsx";
 

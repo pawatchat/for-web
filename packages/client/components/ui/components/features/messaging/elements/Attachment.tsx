@@ -1,6 +1,6 @@
 import { Match, Show, Switch } from "solid-js";
 
-import { File, ImageEmbed, Message, VideoEmbed } from "stoat.js";
+import { File, ImageEmbed, Message, VideoEmbed } from "pawat.js";
 import { css } from "styled-system/css";
 import { styled } from "styled-system/jsx";
 

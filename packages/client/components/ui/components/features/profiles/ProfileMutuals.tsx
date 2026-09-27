@@ -1,7 +1,7 @@
 import { For, Show } from "solid-js";
 
 import { useQuery } from "@tanstack/solid-query";
-import { ServerMember, User } from "stoat.js";
+import { ServerMember, User } from "pawat.js";
 import { styled } from "styled-system/jsx";
 
 import { useClient } from "@revolt/client";

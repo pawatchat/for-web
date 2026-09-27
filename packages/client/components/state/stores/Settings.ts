@@ -61,12 +61,17 @@ interface SettingsDefinition {
   "appearance:show_send_button": boolean;
 
   /**
+   * Typing indicator preset
+   */
+  "appearance:typing_indicator_preset": string;
+
+  /**
    * Whether to render messages in compact mode
    */
   "appearance:compact_mode": boolean;
 
   /**
-   * Indicate new users to Stoat
+   * Indicate new users to Pawat
    * TODO: implement
    */
   // "appearance:show_account_age": boolean;
@@ -105,6 +110,7 @@ const EXPECTED_TYPES: { [K in keyof SettingsDefinition]: ValueType<K> } = {
   "notifications:push": "string",
   "appearance:unicode_emoji": "string",
   "appearance:show_send_button": "boolean",
+  "appearance:typing_indicator_preset": "string",
   "appearance:compact_mode": "boolean",
   "advanced:copy_id": "boolean",
   "advanced:admin_panel": "boolean",
@@ -148,6 +154,7 @@ export class Settings extends AbstractStore<"settings", TypeSettings> {
       "notifications:push": "default",
       "appearance:unicode_emoji": "fluent-3d",
       "appearance:show_send_button": true,
+      "appearance:typing_indicator_preset": "typing...",
       "appearance:compact_mode": false,
       "advanced:copy_id": false,
       "advanced:admin_panel": false,

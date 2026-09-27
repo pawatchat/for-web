@@ -16,7 +16,7 @@ import {
 } from "solid-icons/bi";
 import { Match, Switch } from "solid-js";
 
-import { SystemMessage } from "stoat.js";
+import { SystemMessage } from "pawat.js";
 import { styled } from "styled-system/jsx";
 
 import { useTime } from "@revolt/i18n";

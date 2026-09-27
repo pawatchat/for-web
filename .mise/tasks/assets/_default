@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#MISE description="Pull in Stoat brand assets"
+#MISE description="Pull in Pawat brand assets"
 #MISE depends=["assets:fallback"]
 set -e
 

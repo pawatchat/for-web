@@ -13,7 +13,7 @@ import DesktopApp from "../../../public/assets/inapp-promotion/web/desktop-app.w
 /**
  * Download page for the desktop app
  */
-const DESKTOP_DOWNLOAD_URL = "https://stoat.chat/download";
+const DESKTOP_DOWNLOAD_URL = "https://pawat.chat/download";
 
 /**
  * Widths at which the auth page shows its side panel (it hides below 900px)
@@ -29,7 +29,7 @@ const isMobileDevice = () =>
 /**
  * Which app to promote: people in the desktop app hear about the Android
  * app, people in a browser hear about the desktop app, and third party
- * instances promote nothing, as the apps are Stoat's
+ * instances promote nothing, as the apps are Pawat's
  */
 type Upsell = "android" | "desktop" | "none";
 
@@ -181,10 +181,10 @@ const DevSwitch = styled("button", {
 });
 
 /**
- * Promotes whichever Stoat app the person logging in isn't already using
+ * Promotes whichever Pawat app the person logging in isn't already using
  */
 export function AppUpsell() {
-  const { isStoat } = useInstance();
+  const { isPawat } = useInstance();
 
   // don't render (and download images) while the panel is hidden
   const panelQuery = window.matchMedia(PANEL_SHOWN);
@@ -193,13 +193,13 @@ export function AppUpsell() {
   panelQuery.addEventListener("change", onChange);
   onCleanup(() => panelQuery.removeEventListener("change", onChange));
 
-  // builds without the Stoat brand assets get a 1x1 transparent placeholder,
+  // builds without the Pawat brand assets get a 1x1 transparent placeholder,
   // which would otherwise show up as an empty framed window
   const [desktopShotIsPlaceholder, setDesktopShotIsPlaceholder] =
     createSignal(false);
 
   const [upsell, setUpsell] = createSignal<Upsell>(
-    !isStoat ? "none" : window.native ? "android" : "desktop",
+    !isPawat ? "none" : window.native ? "android" : "desktop",
   );
 
   // decided outside JSX, as Solid wraps JSX conditions in a way that stops
@@ -233,7 +233,7 @@ export function AppUpsell() {
             </h2>
             <p>
               <Trans>
-                Get Stoat for Android and keep up with your friends wherever you
+                Get Pawat for Android and keep up with your friends wherever you
                 are.
               </Trans>
             </p>
@@ -275,7 +275,7 @@ export function AppUpsell() {
           <Copy>
             <h2>
               <Trans>
-                Stoat, right on <span>your desktop.</span>
+                Pawat, right on <span>your desktop.</span>
               </Trans>
             </h2>
             <p>

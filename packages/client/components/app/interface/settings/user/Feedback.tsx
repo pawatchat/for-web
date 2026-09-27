@@ -2,7 +2,7 @@ import { useNavigate } from "@solidjs/router";
 import { Match, Switch } from "solid-js";
 
 import { Trans } from "@lingui/solid/macro";
-import { PublicChannelInvite } from "stoat.js";
+import { PublicChannelInvite } from "pawat.js";
 import { styled } from "styled-system/jsx";
 
 import MdGroups3 from "@material-design-icons/svg/filled/groups_3.svg?component-solid";
@@ -24,7 +24,7 @@ export function Feedback() {
   const client = useClient();
   const instance = useInstance();
 
-  const showLoungeButton = instance.isStoat;
+  const showLoungeButton = instance.isPawat;
   const isInLounge =
     client()!.servers.get("01F7ZSBSFHQ8TA81725KQCSDDP") !== undefined;
 
@@ -45,7 +45,7 @@ export function Feedback() {
           </CategoryButton>
         </Link> */}
         <Link
-          href="https://github.com/orgs/stoatchat/discussions/categories/feature-suggestions"
+          href="https://github.com/orgs/pawatchat/discussions/categories/feature-suggestions"
           target="_blank"
         >
           <CategoryButton
@@ -53,14 +53,14 @@ export function Feedback() {
             icon={<MdStar {...iconSize(22)} />}
             ignoreClick
             description={
-              <Trans>Suggest new Stoat features on GitHub discussions.</Trans>
+              <Trans>Suggest new Pawat features on GitHub discussions.</Trans>
             }
           >
             <Trans>Submit feature suggestion</Trans>
           </CategoryButton>
         </Link>
         <Link
-          href="https://github.com/orgs/stoatchat/discussions/categories/feedback"
+          href="https://github.com/orgs/pawatchat/discussions/categories/feedback"
           target="_blank"
         >
           <CategoryButton
@@ -73,7 +73,7 @@ export function Feedback() {
           </CategoryButton>
         </Link>
         <Link
-          href="https://github.com/stoatchat/for-web/issues?q=is%3Aissue%20state%3Aopen%20type%3ABug"
+          href="https://github.com/pawatchat/for-web/issues?q=is%3Aissue%20state%3Aopen%20type%3ABug"
           target="_blank"
         >
           <CategoryButton
@@ -100,7 +100,7 @@ export function Feedback() {
               }
               icon={<MdGroups3 />}
             >
-              <Trans>Go to the Stoat Lounge</Trans>
+              <Trans>Go to the Pawat Lounge</Trans>
             </CategoryButton>
           </Match>
           <Match when={showLoungeButton && !isInLounge}>
@@ -119,7 +119,7 @@ export function Feedback() {
               }
               icon={<MdGroups3 />}
             >
-              <Trans>Join the Stoat Lounge</Trans>
+              <Trans>Join the Pawat Lounge</Trans>
             </CategoryButton>
           </Match>
         </Switch>

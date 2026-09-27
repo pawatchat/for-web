@@ -1,7 +1,7 @@
 import { Accessor, Match, Setter, Show, Switch } from "solid-js";
 
 import { Trans, useLingui } from "@lingui/solid/macro";
-import { Channel } from "stoat.js";
+import { Channel } from "pawat.js";
 import { css } from "styled-system/css";
 import { styled } from "styled-system/jsx";
 

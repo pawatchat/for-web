@@ -2,7 +2,7 @@ import { createFormControl, createFormGroup } from "solid-forms";
 import { Match, Show, Switch } from "solid-js";
 
 import { Trans, useLingui } from "@lingui/solid/macro";
-import type { API } from "stoat.js";
+import type { API } from "pawat.js";
 
 import { useClient } from "@revolt/client";
 import { useDurationFormat } from "@revolt/i18n/durations";

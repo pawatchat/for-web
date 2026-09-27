@@ -9,7 +9,7 @@ import {
 } from "solid-js";
 
 import { useLingui } from "@lingui/solid/macro";
-import { Channel } from "stoat.js";
+import { Channel } from "pawat.js";
 
 import { useClient } from "@revolt/client";
 import { debounce } from "@revolt/common";
@@ -157,6 +157,7 @@ export function MessageComposition(props: Props) {
       ws.send({
         type: "BeginTyping",
         channel: props.channel.id,
+        indicator: state.settings.getValue("appearance:typing_indicator_preset"),
       });
     }
   }

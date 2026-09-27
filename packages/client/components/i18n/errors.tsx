@@ -1,6 +1,6 @@
 import { Trans, useLingui } from "@lingui/solid/macro";
 import { createMemo, Match, Switch } from "solid-js";
-import { API } from "stoat.js";
+import { API } from "pawat.js";
 
 const RE_BREAK = /\s*\n\s*/g;
 
@@ -185,7 +185,7 @@ export function useError() {
           return err.type + " " + err.location;
 
         default:
-          return t`Uncaught Stoat error: ${err.type}`;
+          return t`Uncaught Pawat error: ${err.type}`;
       }
     }
 
@@ -241,7 +241,7 @@ export function TranslatedError(props: TranslatedErrorProps) {
             <Trans>
               This sign up is marked as spam. Please see{" "}
               <a
-                href="https://support.stoat.chat/kb/safety/blocked-for-spam"
+                href="https://support.pawat.chat/kb/safety/blocked-for-spam"
                 target="_blank"
                 rel="noreferrer"
               >

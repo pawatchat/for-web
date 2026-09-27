@@ -7,7 +7,7 @@ import {
   ViewUpdate,
   WidgetType,
 } from "@codemirror/view";
-import { Channel, ServerMember, ServerRole, User } from "stoat.js";
+import { Channel, ServerMember, ServerRole, User } from "pawat.js";
 
 import {
   RE_UNICODE_EMOJI,

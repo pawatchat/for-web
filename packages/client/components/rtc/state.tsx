@@ -23,7 +23,7 @@ import {
   VideoEncoding,
   VideoPresets,
 } from "livekit-client";
-import { Channel } from "stoat.js";
+import { Channel } from "pawat.js";
 
 import { SoundController, useSound } from "@revolt/client";
 import { useInstance } from "@revolt/instance";

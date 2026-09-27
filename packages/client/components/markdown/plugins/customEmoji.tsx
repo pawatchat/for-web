@@ -1,7 +1,7 @@
 import { Match, Switch, createSignal, onMount } from "solid-js";
 
 import { Handler } from "mdast-util-to-hast";
-import { RE_CUSTOM_EMOJI } from "stoat.js";
+import { RE_CUSTOM_EMOJI } from "pawat.js";
 import { cva } from "styled-system/css";
 import { Plugin } from "unified";
 import { visit } from "unist-util-visit";

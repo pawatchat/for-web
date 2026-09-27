@@ -271,6 +271,9 @@ importers:
       mdui:
         specifier: ^2.1.3
         version: 2.1.3
+      pawat.js:
+        specifier: workspace:^
+        version: link:../pawat.js
       property-information:
         specifier: ^6.5.0
         version: 6.5.0
@@ -367,9 +370,6 @@ importers:
       space-separated-tokens:
         specifier: ^2.0.2
         version: 2.0.2
-      stoat.js:
-        specifier: workspace:^
-        version: link:../stoat.js
       style-to-object:
         specifier: ^1.0.8
         version: 1.0.8
@@ -483,6 +483,64 @@ importers:
         specifier: ^5.0.1
         version: 5.0.1(@types/node@24.7.1)(jsdom@25.0.1)(vite@6.4.3(@types/node@24.7.1)(jiti@2.7.0)(lightningcss@1.31.1)(terser@5.49.2)(yaml@2.7.1))
 
+  packages/pawat.js:
+    dependencies:
+      '@solid-primitives/map':
+        specifier: ^0.7.4
+        version: 0.7.4(solid-js@1.9.14)
+      '@solid-primitives/set':
+        specifier: ^0.7.4
+        version: 0.7.4(solid-js@1.9.14)
+      '@vladfrangu/async_event_emitter':
+        specifier: ^2.4.7
+        version: 2.4.7
+      json-with-bigint:
+        specifier: ^3.4.4
+        version: 3.4.4
+      pawat-api:
+        specifier: npm:stoat-api@0.15.3
+        version: stoat-api@0.15.3
+      solid-js:
+        specifier: 1.9.14
+        version: 1.9.14
+      ulid:
+        specifier: ^3.0.2
+        version: 3.0.2
+    devDependencies:
+      '@eslint/js':
+        specifier: ^9.39.1
+        version: 9.39.1
+      '@mxssfd/typedoc-theme':
+        specifier: ^1.1.7
+        version: 1.1.7(typedoc@0.27.9(typescript@5.8.3))
+      '@trivago/prettier-plugin-sort-imports':
+        specifier: ^5.2.2
+        version: 5.2.2(@vue/compiler-sfc@3.5.25)(prettier@3.8.1)(svelte@5.57.0(@typescript-eslint/types@8.54.0))
+      '@types/node':
+        specifier: ^22.15.17
+        version: 22.15.17
+      eslint:
+        specifier: ^9.39.5
+        version: 9.39.5(jiti@2.7.0)
+      eslint-plugin-prettier:
+        specifier: ^5.4.0
+        version: 5.5.6(eslint-config-prettier@10.1.8(eslint@9.39.5(jiti@2.7.0)))(eslint@9.39.5(jiti@2.7.0))(prettier@3.8.1)
+      eslint-plugin-solid:
+        specifier: ^0.14.5
+        version: 0.14.5(eslint@9.39.5(jiti@2.7.0))(typescript@5.8.3)
+      prettier:
+        specifier: ^3.8.1
+        version: 3.8.1
+      typedoc:
+        specifier: ^0.27.9
+        version: 0.27.9(typescript@5.8.3)
+      typescript:
+        specifier: ^5.8.3
+        version: 5.8.3
+      typescript-eslint:
+        specifier: ^8.32.0
+        version: 8.54.0(eslint@9.39.5(jiti@2.7.0))(typescript@5.8.3)
+
   packages/solid-livekit-components:
     dependencies:
       '@livekit/components-core':
@@ -546,64 +604,6 @@ importers:
       vite-plugin-solid:
         specifier: ^2.7.0
         version: 2.11.6(solid-js@1.9.14)(vite@4.5.14(@types/node@20.17.46)(lightningcss@1.31.1)(terser@5.49.2))
-
-  packages/stoat.js:
-    dependencies:
-      '@solid-primitives/map':
-        specifier: ^0.7.4
-        version: 0.7.4(solid-js@1.9.14)
-      '@solid-primitives/set':
-        specifier: ^0.7.4
-        version: 0.7.4(solid-js@1.9.14)
-      '@vladfrangu/async_event_emitter':
-        specifier: ^2.4.7
-        version: 2.4.7
-      json-with-bigint:
-        specifier: ^3.4.4
-        version: 3.4.4
-      solid-js:
-        specifier: 1.9.14
-        version: 1.9.14
-      stoat-api:
-        specifier: 0.15.3
-        version: 0.15.3
-      ulid:
-        specifier: ^3.0.2
-        version: 3.0.2
-    devDependencies:
-      '@eslint/js':
-        specifier: ^9.39.1
-        version: 9.39.1
-      '@mxssfd/typedoc-theme':
-        specifier: ^1.1.7
-        version: 1.1.7(typedoc@0.27.9(typescript@5.8.3))
-      '@trivago/prettier-plugin-sort-imports':
-        specifier: ^5.2.2
-        version: 5.2.2(@vue/compiler-sfc@3.5.25)(prettier@3.8.1)(svelte@5.57.0(@typescript-eslint/types@8.54.0))
-      '@types/node':
-        specifier: ^22.15.17
-        version: 22.15.17
-      eslint:
-        specifier: ^9.39.5
-        version: 9.39.5(jiti@2.7.0)
-      eslint-plugin-prettier:
-        specifier: ^5.4.0
-        version: 5.5.6(eslint-config-prettier@10.1.8(eslint@9.39.5(jiti@2.7.0)))(eslint@9.39.5(jiti@2.7.0))(prettier@3.8.1)
-      eslint-plugin-solid:
-        specifier: ^0.14.5
-        version: 0.14.5(eslint@9.39.5(jiti@2.7.0))(typescript@5.8.3)
-      prettier:
-        specifier: ^3.8.1
-        version: 3.8.1
-      typedoc:
-        specifier: ^0.27.9
-        version: 0.27.9(typescript@5.8.3)
-      typescript:
-        specifier: ^5.8.3
-        version: 5.8.3
-      typescript-eslint:
-        specifier: ^8.32.0
-        version: 8.54.0(eslint@9.39.5(jiti@2.7.0))(typescript@5.8.3)
 
 packages:
 
@@ -6199,6 +6199,7 @@ packages:
   solid-headless@0.13.1:
     resolution: {integrity: sha512-FZJai49YmdBu6oEo8aJGPMQ1Qn8xiW0cnD6vNFDIQWMKJdXEUtDEwz0hTR9aZ7Epq3IkrZs+98E0vNiv1+pZpA==}
     engines: {node: '>=10'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       solid-js: 1.9.14
 

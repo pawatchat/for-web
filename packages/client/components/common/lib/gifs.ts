@@ -1,4 +1,4 @@
-import { MessageEmbed, WebsiteEmbed } from "stoat.js";
+import { MessageEmbed, WebsiteEmbed } from "pawat.js";
 
 /**
  * Full origins of gif providers allowed to embed.

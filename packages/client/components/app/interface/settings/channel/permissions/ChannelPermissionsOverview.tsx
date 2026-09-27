@@ -1,7 +1,7 @@
 import { For, Show, createMemo } from "solid-js";
 
 import { Trans } from "@lingui/solid/macro";
-import { Channel } from "stoat.js";
+import { Channel } from "pawat.js";
 import { styled } from "styled-system/jsx";
 
 import { CategoryButton, Column, Text, typography } from "@revolt/ui";

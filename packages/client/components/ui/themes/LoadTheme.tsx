@@ -7,7 +7,7 @@ import { useState } from "@revolt/state";
 import {
   createMaterialColourVariables,
   createMduiColourTriplets,
-  createStoatWebVariables,
+  createPawatWebVariables,
 } from ".";
 import { SlideState } from "../components/navigation/SlideDrawer";
 import { Masks } from "./Masks";
@@ -44,8 +44,8 @@ export function LoadTheme() {
         }),
         {},
       ),
-      // mount Stoat for Web variables
-      ...createStoatWebVariables(activeTheme),
+      // mount Pawat for Web variables
+      ...createPawatWebVariables(activeTheme),
       // mount --md-sys-color variables
       ...createMaterialColourVariables(activeTheme, "--md-sys-color-"),
       // mount --mdui-color triplet variables

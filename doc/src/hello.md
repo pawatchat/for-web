@@ -1,6 +1,6 @@
-# Stoat for Web & Friends
+# Pawat for Web & Friends
 
-Welcome to the developer documentation for the Stoat for Web project and general guidelines for other platforms we build for.
+Welcome to the developer documentation for the Pawat for Web project and general guidelines for other platforms we build for.
 
 This is very much incomplete and needs more work!
 

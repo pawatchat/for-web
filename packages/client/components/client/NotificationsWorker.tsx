@@ -10,7 +10,7 @@ import {
   TextSystemMessage,
   UserModeratedSystemMessage,
   UserSystemMessage,
-} from "stoat.js";
+} from "pawat.js";
 
 import { useNavigate, useSmartParams } from "@revolt/routing";
 import { useState } from "@revolt/state";

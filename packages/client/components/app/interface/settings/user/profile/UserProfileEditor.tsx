@@ -3,7 +3,7 @@ import { createEffect, createSignal, JSX, on, Show } from "solid-js";
 
 import { Trans, useLingui } from "@lingui/solid/macro";
 import { useQueryClient } from "@tanstack/solid-query";
-import { API, User, UserProfile } from "stoat.js";
+import { API, User, UserProfile } from "pawat.js";
 
 import { useClient } from "@revolt/client";
 import { useInstance } from "@revolt/instance";

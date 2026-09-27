@@ -17,7 +17,7 @@ import {
 } from "solid-js";
 
 import isEqual from "lodash.isequal";
-import { Channel, Message as MessageInterface } from "stoat.js";
+import { Channel, Message as MessageInterface } from "pawat.js";
 import { styled } from "styled-system/jsx";
 
 import { useClient, useClientLifecycle } from "@revolt/client";

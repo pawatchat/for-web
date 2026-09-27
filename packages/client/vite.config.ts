@@ -46,9 +46,9 @@ export default defineConfig({
         type: "module",
       },
       manifest: {
-        name: "Stoat",
-        short_name: "Stoat",
-        description: "User-first open source chat platform.",
+        name: "Pawat",
+        short_name: "Pawat",
+        description: "The fluffiest open source chat platform.",
         categories: ["communication", "chat", "messaging"],
         start_url: base,
         scope: pwaScope,
@@ -107,7 +107,7 @@ export default defineConfig({
     sourcemap: true,
   },
   optimizeDeps: {
-    exclude: ["hast"],
+    exclude: ["hast", "pawat.js"],
   },
   resolve: {
     alias: {

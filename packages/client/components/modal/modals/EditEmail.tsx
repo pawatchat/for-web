@@ -4,7 +4,7 @@ import { Trans, useLingui } from "@lingui/solid/macro";
 
 import { Column, Dialog, DialogProps, Form2 } from "@revolt/ui";
 
-import { MFATicket } from "stoat.js";
+import { MFATicket } from "pawat.js";
 import { useModals } from "..";
 import { Modals } from "../types";
 

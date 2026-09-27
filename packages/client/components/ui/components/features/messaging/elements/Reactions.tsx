@@ -1,7 +1,7 @@
 import { For, Show, createMemo } from "solid-js";
 
 import { useLingui } from "@lingui/solid/macro";
-import { API } from "stoat.js";
+import { API } from "pawat.js";
 import { styled } from "styled-system/jsx";
 
 import { useMessage } from "@revolt/app";

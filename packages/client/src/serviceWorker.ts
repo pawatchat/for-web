@@ -8,7 +8,7 @@ interface ChannelPartial {
   name?: string;
 }
 
-interface StoatPushNotification {
+interface PawatPushNotification {
   title?: string;
   author?: string;
   body: string;
@@ -32,24 +32,24 @@ self.addEventListener("push", (event) => {
   if (!event.data) return;
   const payload = event.data.text();
 
-  const notification: StoatPushNotification = JSON.parse(payload);
+  const notification: PawatPushNotification = JSON.parse(payload);
 
   if (!notification.title) {
     if (notification.channel) {
       if (notification.channel.channel_type === "DirectMessage") {
-        notification.title = notification.author || "Stoat";
+        notification.title = notification.author || "Pawat";
       } else {
         notification.title = `${notification.author} in ${notification.channel.name}`;
       }
     } else {
-      notification.title = "Stoat";
+      notification.title = "Pawat";
     }
   }
 
   notification.url ||= self.registration.scope;
 
   event.waitUntil(
-    self.registration.showNotification(notification.title || "Stoat", {
+    self.registration.showNotification(notification.title || "Pawat", {
       icon: notification.icon,
       body: notification.body,
       data: notification.url,

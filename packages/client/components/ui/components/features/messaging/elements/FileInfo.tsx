@@ -7,7 +7,7 @@ import {
 } from "solid-icons/bi";
 import { Match, Show, Switch } from "solid-js";
 
-import { File, MessageEmbed } from "stoat.js";
+import { File, MessageEmbed } from "pawat.js";
 import { styled } from "styled-system/jsx";
 
 import { IconButton, Text } from "@revolt/ui/components/design";

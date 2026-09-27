@@ -1,6 +1,6 @@
 import { Match, Show, Switch } from "solid-js";
 
-import { TextEmbed as TextEmbedClass, WebsiteEmbed } from "stoat.js";
+import { TextEmbed as TextEmbedClass, WebsiteEmbed } from "pawat.js";
 import { css } from "styled-system/css";
 import { styled } from "styled-system/jsx";
 

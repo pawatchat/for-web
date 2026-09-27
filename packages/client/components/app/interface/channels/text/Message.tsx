@@ -13,7 +13,7 @@ import {
 } from "solid-js";
 
 import { useLingui } from "@lingui/solid/macro";
-import { Message as MessageInterface } from "stoat.js";
+import { Message as MessageInterface } from "pawat.js";
 import { cva } from "styled-system/css";
 import { styled } from "styled-system/jsx";
 import { decodeTime } from "ulid";
@@ -299,7 +299,7 @@ export function Message(props: Props) {
               }
             >
               <NewUser>
-                <Tooltip content={t`New to Stoat`} placement="top">
+                <Tooltip content={t`New to Pawat`} placement="top">
                   <Symbol size={16} fill>
                     spa
                   </Symbol>

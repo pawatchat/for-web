@@ -1,7 +1,7 @@
 import { Show } from "solid-js";
 
 import { Trans } from "@lingui/solid/macro";
-import { Server } from "stoat.js";
+import { Server } from "pawat.js";
 import { css } from "styled-system/css";
 
 import { useClient, useClientLifecycle } from "@revolt/client";
@@ -135,7 +135,7 @@ const Config: SettingsConfiguration<{ server: Server }> = {
           </Text>
           <Show when={window.native}>
             <Text class="label">
-              Stoat for Desktop {window.native.versions.desktop()}
+              Pawat for Desktop {window.native.versions.desktop()}
             </Text>
             <Text class="label">
               <span
@@ -223,7 +223,7 @@ const Config: SettingsConfiguration<{ server: Server }> = {
           ],
         },
         {
-          title: "Stoat",
+          title: "Pawat",
           entries: [
             {
               id: "bots",
@@ -328,7 +328,7 @@ const Config: SettingsConfiguration<{ server: Server }> = {
               title: <Trans>What's New</Trans>,
             },
             {
-              href: "https://github.com/stoatchat",
+              href: "https://github.com/pawatchat",
               icon: <MdMemory {...iconSize(20)} />,
               title: <Trans>Source Code</Trans>,
             },
@@ -338,7 +338,7 @@ const Config: SettingsConfiguration<{ server: Server }> = {
               title: <Trans>Advanced</Trans>,
             },
             {
-              href: "https://ko-fi.com/stoatchat",
+              href: "https://ko-fi.com/pawatchat",
               icon: <MdCoffee {...iconSize(20)} />,
               title: <Trans>Donate</Trans>,
             },

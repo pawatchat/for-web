@@ -3,7 +3,7 @@ import { For, Match, Show, Switch, createMemo, onMount } from "solid-js";
 
 import { Trans, useLingui } from "@lingui/solid/macro";
 import { createResizeObserver } from "@solid-primitives/resize-observer";
-import { Channel, User } from "stoat.js";
+import { Channel, User } from "pawat.js";
 import { cva } from "styled-system/css";
 import { styled } from "styled-system/jsx";
 
@@ -78,23 +78,48 @@ export function CompositionInfo(props: Props) {
   });
 
   /**
+   * Get raw typing entries
+   */
+  const typingEntries = createMemo(() =>
+    [...props.channel.typingIndicators.entries()]
+      .filter(([id]) => {
+        const u = client().users.get(id);
+        return id !== client().user?.id && u?.relationship !== "Blocked";
+      })
+      .map(([id, indicator]) => ({
+        id,
+        indicator: indicator || "typing...",
+      }))
+      .sort((a, b) => a.id.toUpperCase().localeCompare(b.id.toUpperCase()))
+  );
+
+  /**
    * Generate list of user IDs
    * @returns User IDs
    */
   const users = useUsers(
-    () =>
-      (
-        props.channel.typing.filter(
-          (user) =>
-            typeof user !== "undefined" &&
-            user.id !== client().user!.id &&
-            user.relationship !== "Blocked",
-        ) as User[]
-      )
-        .sort((a, b) => a!.id.toUpperCase().localeCompare(b!.id.toUpperCase()))
-        .map((user) => user.id),
+    () => typingEntries().map((entry) => entry.id),
     true,
   );
+
+  const typingGroups = createMemo(() => {
+    const groups = new Map<string, NonNullable<ReturnType<typeof users>[0]>[]>();
+    const uList = users();
+    const entries = typingEntries();
+
+    for (let i = 0; i < uList.length; i++) {
+      const userInfo = uList[i];
+      if (!userInfo) continue;
+
+      const userId = userInfo.user?.id;
+      const entry = (userId ? entries.find((e) => e.id === userId) : undefined) ?? entries[i];
+      const indicator = entry?.indicator || "typing...";
+
+      if (!groups.has(indicator)) groups.set(indicator, []);
+      groups.get(indicator)!.push(userInfo);
+    }
+    return Array.from(groups.entries());
+  });
 
   let barRef: HTMLDivElement | undefined;
 
@@ -130,20 +155,25 @@ export function CompositionInfo(props: Props) {
             </For>
           </Avatars>
           <OverflowingText class={typography({ class: "body", size: "small" })}>
-            <Switch fallback={<Trans>Several people are typing…</Trans>}>
-              <Match when={users().length === 1}>
-                <Trans>{users()[0]!.username} is typing…</Trans>
-              </Match>
-              <Match when={users().length < 5}>
-                <Trans>
-                  {users()
-                    .slice(0, -1)
-                    .map((user) => user!.username)
-                    .join(", ")}{" "}
-                  and {users().slice(-1)[0]!.username} are typing…
-                </Trans>
-              </Match>
-            </Switch>
+            <For each={typingGroups()}>
+              {([indicator, groupUsers], index) => (
+                <>
+                  <Switch fallback={<>{`Several people are ${indicator}`}</>}>
+                    <Match when={groupUsers.length === 1}>
+                      {groupUsers[0]!.username} is {indicator}
+                    </Match>
+                    <Match when={groupUsers.length < 5}>
+                      {groupUsers
+                        .slice(0, -1)
+                        .map((user) => user!.username)
+                        .join(", ")}{" "}
+                      and {groupUsers.slice(-1)[0]!.username} are {indicator}
+                    </Match>
+                  </Switch>
+                  {index() < typingGroups().length - 1 ? " · " : ""}
+                </>
+              )}
+            </For>
           </OverflowingText>
         </Show>
         <Show when={props.channel.slowmode}>

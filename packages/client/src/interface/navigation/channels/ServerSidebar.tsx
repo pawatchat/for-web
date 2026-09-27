@@ -10,7 +10,7 @@ import {
 } from "solid-js";
 
 import { useLingui } from "@lingui/solid/macro";
-import type { Channel, Server, ServerFlags } from "stoat.js";
+import type { Channel, Server, ServerFlags } from "pawat.js";
 import { styled } from "styled-system/jsx";
 
 import { useDevice } from "@revolt/common";

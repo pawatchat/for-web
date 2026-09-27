@@ -16,7 +16,7 @@ import {
 } from "solid-js";
 
 import { Trans } from "@lingui/solid/macro";
-import { Session } from "stoat.js";
+import { Session } from "pawat.js";
 import { styled } from "styled-system/jsx";
 
 import { useClient } from "@revolt/client";

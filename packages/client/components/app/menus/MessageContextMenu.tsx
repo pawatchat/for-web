@@ -1,7 +1,7 @@
 import { Accessor, For, Match, Show, Switch } from "solid-js";
 
 import { Trans } from "@lingui/solid/macro";
-import { File, Message } from "stoat.js";
+import { File, Message } from "pawat.js";
 
 import { useClient, useUser } from "@revolt/client";
 import { useInstance } from "@revolt/instance";
@@ -115,11 +115,11 @@ export function MessageContextMenu(props: {
   }
 
   /**
-   * Open message in Stoat Admin Panel
+   * Open message in Pawat Admin Panel
    */
   function openAdminPanel() {
     window.open(
-      `https://admin.stoatinternal.com/panel/inspect/message/${props.message!.id}`,
+      `https://admin.pawatinternal.com/panel/inspect/message/${props.message!.id}`,
       "_blank",
     );
   }

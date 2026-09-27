@@ -16,10 +16,10 @@ import {
   ServerMember,
   ServerRole,
   Session,
-  File as StoatFile,
+  File as PawatFile,
   User,
   VideoEmbed,
-} from "stoat.js";
+} from "pawat.js";
 
 import type { SettingsConfigurations } from "@revolt/app";
 import { CategoryData } from "@revolt/app/menus/CategoryContextMenu";
@@ -169,7 +169,7 @@ export type Modals =
       type: "image_viewer";
       embed?: ImageEmbed;
       gif?: VideoEmbed;
-      file?: StoatFile;
+      file?: PawatFile;
     }
   | {
       type: "join_server";

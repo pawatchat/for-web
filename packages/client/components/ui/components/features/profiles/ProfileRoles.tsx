@@ -1,7 +1,7 @@
 import { For, Show, createMemo } from "solid-js";
 
 import { Trans } from "@lingui/solid/macro";
-import { ServerMember } from "stoat.js";
+import { ServerMember } from "pawat.js";
 import { styled } from "styled-system/jsx";
 
 import { useModals } from "@revolt/modal";

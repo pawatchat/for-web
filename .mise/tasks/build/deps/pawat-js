@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#MISE description="Build pawat.js"
+set -e
+
+pnpm --filter pawat.js build

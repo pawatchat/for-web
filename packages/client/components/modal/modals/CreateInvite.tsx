@@ -31,7 +31,7 @@ const Invite = styled("div", {
 
 /** Get absolute link from invite id */
 export const getInviteLink = (id: string, inst: Instance) =>
-  inst.isStoat ? `https://stt.gg/${id}` : inst.href(`/invite/${id}`);
+  inst.isPawat ? `https://stt.gg/${id}` : inst.href(`/invite/${id}`);
 
 /**
  * Modal to create a new invite

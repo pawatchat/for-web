@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/solid-query";
-import { User } from "stoat.js";
+import { User } from "pawat.js";
 
 import { useClient } from ".";
 

@@ -30,7 +30,7 @@ jobs:
       - name: Log in to Harbor
         uses: docker/login-action@b45d80f862d83dbcd57f89517bcf500b2ab88fb2 # v4.0.0
         with:
-          registry: https://registry.stoatinternal.com
+          registry: https://registry.pawatinternal.com
           username: ${{ secrets.HARBOR_USERNAME }}
           password: ${{ secrets.HARBOR_PASSWORD }}
 
@@ -40,8 +40,8 @@ jobs:
           context: .
           push: true
           tags: |
-            registry.stoatinternal.com/stoat/frontend:${{ github.sha }}
-            registry.stoatinternal.com/stoat/frontend:latest
+            registry.pawatinternal.com/pawat/frontend:${{ github.sha }}
+            registry.pawatinternal.com/pawat/frontend:latest
           build-args: |
             BASE_PATH=/app/
             PWA_SCOPE=/

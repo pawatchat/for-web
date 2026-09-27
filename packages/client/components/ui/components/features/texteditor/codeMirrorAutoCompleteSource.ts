@@ -5,7 +5,7 @@ import type {
   CompletionContext,
   CompletionResult,
 } from "@codemirror/autocomplete";
-import { User } from "stoat.js";
+import { User } from "pawat.js";
 
 import { useClient } from "@revolt/client";
 import {

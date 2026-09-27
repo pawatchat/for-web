@@ -1,6 +1,6 @@
 import { Accessor, Setter, batch, createSignal } from "solid-js";
 
-import { API, Channel, Client, Message } from "stoat.js";
+import { API, Channel, Client, Message } from "pawat.js";
 import { ulid } from "ulid";
 
 import { insecureUniqueId } from "@revolt/common";

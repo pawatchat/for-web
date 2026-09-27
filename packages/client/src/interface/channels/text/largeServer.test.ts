@@ -1,4 +1,4 @@
-import type { Server } from "stoat.js";
+import type { Server } from "pawat.js";
 import { describe, expect, test } from "vitest";
 
 import { isLargeServer } from "./largeServer";

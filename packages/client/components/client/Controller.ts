@@ -1,7 +1,7 @@
 import { detect } from "detect-browser";
 import { Accessor, Setter, createMemo, createSignal } from "solid-js";
 
-import { API, Client, ConnectionState, ProtocolV1 } from "stoat.js";
+import { API, Client, ConnectionState, ProtocolV1 } from "pawat.js";
 
 import { ModalControllerExtended } from "@revolt/modal";
 import type { State as ApplicationState } from "@revolt/state";
@@ -418,7 +418,7 @@ export default class ClientController {
 
   isLoggedIn: Accessor<boolean>;
 
-  /** Stoat instance the client belongs to. Also accessible via `useInstance()` */
+  /** Pawat instance the client belongs to. Also accessible via `useInstance()` */
   readonly instance: Instance;
 
   /**
@@ -486,9 +486,9 @@ export default class ClientController {
         os = "iPadOS";
       }
 
-      friendly_name = `Stoat for Web (${name} on ${os})`;
+      friendly_name = `Pawat for Web (${name} on ${os})`;
     } else {
-      friendly_name = "Stoat for Web (Unknown Device)";
+      friendly_name = "Pawat for Web (Unknown Device)";
     }
 
     // Try to login with given credentials

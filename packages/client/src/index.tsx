@@ -11,7 +11,7 @@ import { Navigate, Route, Router, useParams } from "@solidjs/router";
 import { QueryClient, QueryClientProvider } from "@tanstack/solid-query";
 import "material-symbols";
 import "mdui/mdui.css";
-import { PublicBot, PublicChannelInvite } from "stoat.js";
+import { PublicBot, PublicChannelInvite } from "pawat.js";
 
 import FlowCheck from "@revolt/auth/src/flows/FlowCheck";
 import FlowConfirmReset from "@revolt/auth/src/flows/FlowConfirmReset";
@@ -82,7 +82,7 @@ function InviteRedirect() {
   onMount(() => {
     if (params.code) {
       client()
-        // TODO: add a helper to stoat.js for this
+        // TODO: add a helper to pawat.js for this
         .api.get(`/invites/${params.code as ""}`)
         .then((invite) => PublicChannelInvite.from(client(), invite))
         .then((invite) => openModal({ type: "invite", invite }))
@@ -104,7 +104,7 @@ function BotRedirect() {
   onMount(() => {
     if (params.code) {
       client()
-        // TODO: add a helper to stoat.js for this
+        // TODO: add a helper to pawat.js for this
         .api.get(`/bots/${params.code as ""}/invite`)
         .then((invite) => new PublicBot(client(), invite))
         .then((invite) => openModal({ type: "add_bot", invite }))

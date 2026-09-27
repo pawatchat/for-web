@@ -1,6 +1,6 @@
 import { Show, createSignal } from "solid-js";
 
-import { ServerMember, User } from "stoat.js";
+import { ServerMember, User } from "pawat.js";
 import { css } from "styled-system/css";
 import { styled } from "styled-system/jsx";
 

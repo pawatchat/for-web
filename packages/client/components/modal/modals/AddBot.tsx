@@ -2,7 +2,7 @@ import { createFormControl, createFormGroup } from "solid-forms";
 import { Show, createMemo, createSignal } from "solid-js";
 
 import { Trans, useLingui } from "@lingui/solid/macro";
-import { Server } from "stoat.js";
+import { Server } from "pawat.js";
 import { cva } from "styled-system/css";
 import { styled } from "styled-system/jsx";
 import { decodeTime } from "ulid";
@@ -156,7 +156,7 @@ export function AddBotModal(props: DialogProps & Modals & { type: "add_bot" }) {
 
           <Column gap="sm" align>
             <Text class="label" size="small">
-              Bots are not verified by Stoat.
+              Bots are not verified by Pawat.
             </Text>
             <Text class="label" size="small">
               The bot will not be granted any permissions.

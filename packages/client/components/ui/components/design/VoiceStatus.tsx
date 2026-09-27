@@ -1,7 +1,7 @@
 import { Match, Switch } from "solid-js";
 import { styled } from "styled-system/jsx";
 
-import { VoiceStatus as APIVoiceStatus } from "stoat.js";
+import { VoiceStatus as APIVoiceStatus } from "pawat.js";
 
 import MdScreenShare from "@material-design-icons/svg/outlined/screen_share.svg?component-solid";
 import MdVideoChat from "@material-design-icons/svg/outlined/video_call.svg?component-solid";

@@ -95,10 +95,10 @@ export function AppearanceMenu() {
         {/* <Row gap="xs justify="stretch">
           <Button
             group="connected-start"
-            groupActive={state.theme.preset === "stoat"}
-            onPress={() => state.theme.setPreset("stoat")}
+            groupActive={state.theme.preset === "pawat"}
+            onPress={() => state.theme.setPreset("pawat")}
           >
-            <Trans>Stoat</Trans>
+            <Trans>Pawat</Trans>
           </Button>
           <Button
             group="connected-end"
@@ -423,6 +423,32 @@ export function AppearanceMenu() {
         >
           <For each={UNICODE_EMOJI_PACKS}>
             {(pack) => <EmojiPack pack={pack} />}
+          </For>
+        </FloatingSelect>
+
+        <FloatingSelect
+          label={t`Typing Indicator Preset`}
+          value={state.settings.getValue("appearance:typing_indicator_preset")}
+          onChange={(e) =>
+            state.settings.setValue(
+              "appearance:typing_indicator_preset",
+              e.currentTarget.value as never,
+            )
+          }
+        >
+          <For
+            each={[
+              "typing...",
+              "meowing...",
+              "barking...",
+              "yipping...",
+              "dreaming...",
+              "thinking...",
+              "philosophizing...",
+              "yapping...",
+            ]}
+          >
+            {(preset) => <MenuItem value={preset}>{preset}</MenuItem>}
           </For>
         </FloatingSelect>
       </Column>

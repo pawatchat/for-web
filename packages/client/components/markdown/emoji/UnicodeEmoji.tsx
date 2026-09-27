@@ -74,7 +74,7 @@ export function unicodeEmojiUrl(
   pack: UnicodeEmojiPacks = "fluent-3d",
   text: string,
 ) {
-  return `https://static.stoat.chat/emoji/${pack}/${toCodepoint(text)}.svg?v=1`;
+  return `https://static.pawat.chat/emoji/${pack}/${toCodepoint(text)}.svg?v=1`;
 }
 
 /**

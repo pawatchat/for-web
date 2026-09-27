@@ -1,8 +1,8 @@
 import { Show } from "solid-js";
 
 import { Trans } from "@lingui/solid/macro";
-import type { API } from "stoat.js";
-import { Channel, Server } from "stoat.js";
+import type { API } from "pawat.js";
+import { Channel, Server } from "pawat.js";
 
 import { useModals } from "@revolt/modal";
 import { useState } from "@revolt/state";

@@ -1,7 +1,7 @@
 import { Show } from "solid-js";
 
 import { Trans } from "@lingui/solid/macro";
-import { Server } from "stoat.js";
+import { Server } from "pawat.js";
 
 import { useModals } from "@revolt/modal";
 

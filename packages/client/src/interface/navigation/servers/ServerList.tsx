@@ -11,7 +11,7 @@ import {
 import { Portal } from "solid-js/web";
 
 import { Trans, useLingui } from "@lingui/solid/macro";
-import { Channel, Server, User } from "stoat.js";
+import { Channel, Server, User } from "pawat.js";
 import { css, cva } from "styled-system/css";
 import { styled } from "styled-system/jsx";
 
@@ -443,7 +443,7 @@ export const ServerList = (props: Props) => {
             <Avatar size={42} fallback={<Symbol>add</Symbol>} />
           </a>
         </Tooltip>
-        <Show when={instance.isStoat}>
+        <Show when={instance.isPawat}>
           <Tooltip placement="right" content={"Find new servers to join"}>
             <a
               href={state.layout.getLastActiveDiscoverPath()}

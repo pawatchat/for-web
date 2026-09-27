@@ -12,7 +12,7 @@ import {
   User,
   UserModeratedSystemMessage,
   UserSystemMessage,
-} from "stoat.js";
+} from "pawat.js";
 import { styled } from "styled-system/jsx";
 
 import { useTime } from "@revolt/i18n";

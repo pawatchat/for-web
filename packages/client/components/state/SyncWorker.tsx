@@ -1,6 +1,6 @@
 import { createEffect, on, onCleanup } from "solid-js";
 
-import { ProtocolV1 } from "stoat.js";
+import { ProtocolV1 } from "pawat.js";
 
 import { useClient, useClientLifecycle } from "@revolt/client";
 

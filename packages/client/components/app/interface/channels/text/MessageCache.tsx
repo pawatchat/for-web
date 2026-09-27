@@ -8,7 +8,7 @@ import {
   useContext,
 } from "solid-js";
 
-import { Channel, Client, Message } from "stoat.js";
+import { Channel, Client, Message } from "pawat.js";
 
 import { useClientLifecycle } from "@revolt/client";
 import { State } from "@revolt/client/Controller";

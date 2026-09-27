@@ -1,7 +1,7 @@
 {
-  "name": "stoat-for-web",
+  "name": "pawat-for-web",
   "version": "0.16.0",
-  "description": "Stoat for Web: frontend software for Stoat",
+  "description": "Pawat for Web: frontend software for Pawat",
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "eslint": "^9.26.0",

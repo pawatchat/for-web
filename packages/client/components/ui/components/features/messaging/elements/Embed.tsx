@@ -6,7 +6,7 @@ import {
   TextEmbed as TextEmbedClass,
   VideoEmbed,
   WebsiteEmbed,
-} from "stoat.js";
+} from "pawat.js";
 import { css } from "styled-system/css";
 
 import { isGifBox, isGif as isGifLib } from "@revolt/common/lib/gifs";

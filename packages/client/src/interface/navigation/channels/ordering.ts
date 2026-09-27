@@ -1,4 +1,4 @@
-import type { API } from "stoat.js";
+import type { API } from "pawat.js";
 
 export interface OrderedCategory {
   id: string;

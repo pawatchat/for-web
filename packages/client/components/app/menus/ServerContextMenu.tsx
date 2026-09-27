@@ -3,7 +3,7 @@ import { For, Show } from "solid-js";
 
 import { Trans } from "@lingui/solid/macro";
 import dayjs from "dayjs";
-import { Server } from "stoat.js";
+import { Server } from "pawat.js";
 
 import { useClient } from "@revolt/client";
 import { useDevice } from "@revolt/common";
@@ -116,11 +116,11 @@ export function ServerContextMenu(props: { server: Server }) {
   }
 
   /**
-   * Open server in Stoat Admin Panel
+   * Open server in Pawat Admin Panel
    */
   function openAdminPanel() {
     window.open(
-      `https://admin.stoatinternal.com/panel/inspect/server/${props.server.id}`,
+      `https://admin.pawatinternal.com/panel/inspect/server/${props.server.id}`,
       "_blank",
     );
   }

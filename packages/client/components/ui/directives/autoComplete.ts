@@ -1,6 +1,6 @@
 import { Accessor, createSignal, JSX, onCleanup } from "solid-js";
 
-import { Channel, Client, ServerMember, ServerRole, User } from "stoat.js";
+import { Channel, Client, ServerMember, ServerRole, User } from "pawat.js";
 
 import { EMOJI_KEYS, getEmojiByShorthand, MAPPED_EMOJI_KEYS } from "../emojis";
 import { registerFloatingElement, unregisterFloatingElement } from "./floating";

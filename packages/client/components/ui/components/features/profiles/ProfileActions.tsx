@@ -2,7 +2,7 @@ import { Show, createResource } from "solid-js";
 
 import { Trans } from "@lingui/solid/macro";
 import { useNavigate } from "@solidjs/router";
-import { PublicBot, ServerMember, User } from "stoat.js";
+import { PublicBot, ServerMember, User } from "pawat.js";
 import { styled } from "styled-system/jsx";
 
 import { UserContextMenu } from "@revolt/app";

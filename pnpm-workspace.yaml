@@ -1,12 +1,12 @@
 packages:
   - packages/client
-  - packages/stoat.js
+  - packages/pawat.js
   - packages/solid-livekit-components
 allowBuilds:
   "@swc/core": true
   esbuild: true
 minimumReleaseAgeExclude:
-  - stoat-api
+  - pawat-api
 nodeLinker: isolated
 
 # Override prettier because some of the submodules have ancient prettiers required

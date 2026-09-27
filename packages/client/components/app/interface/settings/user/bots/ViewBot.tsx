@@ -1,7 +1,7 @@
 import { Trans, useLingui } from "@lingui/solid/macro";
 import { IFormControl } from "solid-forms";
 
-import { Bot } from "stoat.js";
+import { Bot } from "pawat.js";
 
 import { createProfileResource } from "@revolt/client/resources";
 import { useInstance } from "@revolt/instance";

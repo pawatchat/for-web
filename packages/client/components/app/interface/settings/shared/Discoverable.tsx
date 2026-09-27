@@ -8,7 +8,7 @@ import {
   Switch,
 } from "solid-js";
 
-import { Bot, Server } from "stoat.js";
+import { Bot, Server } from "pawat.js";
 import { styled } from "styled-system/jsx";
 
 import { useError } from "@revolt/i18n";
@@ -19,7 +19,7 @@ export function Discoverable(props: {
   discoverable: Bot | Server;
   fullPage?: boolean;
 }) {
-  const { isStoat } = useInstance();
+  const { isPawat } = useInstance();
   const err = useError();
 
   const [discoverRequest, discoverRequestActions] = createResource(() =>
@@ -36,7 +36,7 @@ export function Discoverable(props: {
   };
 
   return (
-    <Show when={isStoat}>
+    <Show when={isPawat}>
       <Show when={!props.fullPage}>
         <Text class="title" size="medium">
           <Trans>Discover</Trans>

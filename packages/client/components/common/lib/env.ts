@@ -1,7 +1,9 @@
-export const STOAT_HOST = "stoat.chat";
-const STOAT_API = "https://api.stoat.chat";
+export const PAWAT_HOST = "pawat.chat";
+export const STOAT_HOST = PAWAT_HOST;
+const PAWAT_API = "https://api.pawat.chat";
+const STOAT_API = PAWAT_API;
 
-/** App `stoat.json` endpoint format */
+/** App `pawat.json` endpoint format */
 export interface AppConfig {
   api: string;
 }
@@ -15,7 +17,7 @@ const getEnv = (name: string, devOnly?: boolean) =>
     ? (import.meta.env[name] as string)
     : undefined;
 
-/** If host is Stoat, normalize to STOAT_HOST, else return host */
+/** If host is Pawat, normalize to PAWAT_HOST, else return host */
 export const normalizeHost = (host: string) =>
   [
     // historically...
@@ -23,29 +25,30 @@ export const normalizeHost = (host: string) =>
     "beta.revolt.chat",
     "revolt.chat",
     // ... and now:
-    "api.stoat.chat",
-    "beta.stoat.chat",
+    "api.pawat.chat",
+    "beta.pawat.chat",
   ].includes(host)
-    ? STOAT_HOST
+    ? PAWAT_HOST
     : host;
 
-const isStoatOfficialAPI = (api: string) =>
+const isPawatOfficialAPI = (api: string) =>
   [
     "https://api.revolt.chat",
-    "https://api.stoat.chat",
-    "https://stoat.chat/api",
-    "https://beta.stoat.chat/api",
-    "canary-api.stoat.chat",
+    "https://api.pawat.chat",
+    "https://pawat.chat/api",
+    "https://beta.pawat.chat/api",
+    "canary-api.pawat.chat",
   ].includes(api);
 
 const DEFAULT_HOST = normalizeHost(
-  getEnv("VITE_DEV_HOST", true) || getEnv("VITE_HOST") || STOAT_HOST,
+  getEnv("VITE_DEV_HOST", true) || getEnv("VITE_HOST") || PAWAT_HOST,
 );
 
 const DEFAULT_API_URL =
-  getEnv("VITE_DEV_API_URL", true) || getEnv("VITE_API_URL") || STOAT_API;
+  getEnv("VITE_DEV_API_URL", true) || getEnv("VITE_API_URL") || PAWAT_API;
 
-if (!isStoatOfficialAPI(DEFAULT_API_URL) && DEFAULT_HOST === STOAT_HOST)
+if (!isPawatOfficialAPI(DEFAULT_API_URL) && DEFAULT_HOST === PAWAT_HOST)
+  console.error("VITE_HOST required when VITE_API_URL is set!");
   console.error("VITE_HOST required when VITE_API_URL is set!");
 
 export default {

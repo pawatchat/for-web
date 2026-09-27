@@ -1,6 +1,6 @@
 import { For } from "solid-js";
 
-import { Channel } from "stoat.js";
+import { Channel } from "pawat.js";
 
 import { useState } from "@revolt/state";
 

@@ -1,5 +1,5 @@
 {
-  description = "Stoat for-web development environment";
+  description = "Pawat for-web development environment";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";

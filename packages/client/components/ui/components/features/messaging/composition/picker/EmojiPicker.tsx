@@ -12,7 +12,7 @@ import {
 import { Trans, useLingui } from "@lingui/solid/macro";
 import { VirtualContainer } from "@minht11/solid-virtual-container";
 import { createResizeObserver } from "@solid-primitives/resize-observer";
-import { Emoji, Server } from "stoat.js";
+import { Emoji, Server } from "pawat.js";
 import { css, cva } from "styled-system/css";
 import { styled } from "styled-system/jsx";
 
