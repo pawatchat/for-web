@@ -1,6 +1,6 @@
 [submodule "packages/pawat.js"]
 	path = packages/pawat.js
-	url = https://github.com/stoatchat/javascript-client-sdk
+	url = https://github.com/pawatchat/javascript-client-sdk
 [submodule "packages/client/assets"]
 	path = packages/client/assets
 	url = ssh://git@github.com/stoatchat/assets
